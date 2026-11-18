@@ -5,7 +5,7 @@
   "kind": "native",
   "author": "17o2r",
   "license": "MIT",
-  "repository": "https://github.com/audcore/audcore-skin-win98",
+  "repository": "https://github.com/audcore/audcore-skin-windows98-desktop",
   "api": {
     "major": 0,
     "minor": 2
@@ -44,5 +44,6 @@
     ],
     "output": "build/skin.dll",
     "intermediate": "build/Audcore-98-v0.1.9/Audcore-98-v0.1.9.skin.audcore"
-  }
+  },
+  "description": "把声核通道放进 Windows 98 风格的桌面、窗口和任务栏，用复古桌面布局操作调音台。"
 }
