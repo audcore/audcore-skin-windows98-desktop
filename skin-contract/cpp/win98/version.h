@@ -1,0 +1,3 @@
+#pragma once
+#define AUDCORE_98_VERSION_TEXT "0.1.9"
+#define AUDCORE_98_VERSION_RESOURCE 0,1,9,0

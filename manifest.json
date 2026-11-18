@@ -1,0 +1,48 @@
+{
+  "id": "cn.audcore.skin.win98",
+  "name": "Audcore 98",
+  "version": "0.1.9",
+  "kind": "native",
+  "author": "17o2r",
+  "license": "MIT",
+  "repository": "https://github.com/audcore/audcore-skin-win98",
+  "api": {
+    "major": 0,
+    "minor": 2
+  },
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "preview": "assets/preview.png",
+  "build": {
+    "schema": 1,
+    "recipe": "msvc-script",
+    "platform": "windows-x86_64",
+    "toolchain": {
+      "compiler": {
+        "name": "msvc",
+        "version": "19.44.35222"
+      },
+      "sdk": {
+        "name": "windows-sdk",
+        "version": "10.0.26100.0"
+      },
+      "tools": {
+        "python": "3.14.2",
+        "msvc": "14.44.35207"
+      }
+    },
+    "steps": [
+      [
+        "powershell.exe",
+        "-NoProfile",
+        "-File",
+        "build.ps1"
+      ]
+    ],
+    "output": "build/skin.dll",
+    "intermediate": "build/Audcore-98-v0.1.9/Audcore-98-v0.1.9.skin.audcore"
+  }
+}
